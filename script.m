@@ -26,3 +26,9 @@ iterations = 1500;
 alpha = 0.01;
 
 theta = gradientDescent(X, y, theta, alpha, iterations);
+
+% Ploting the linear fit
+hold on; 							% keep previous plot visible
+plot(X(:,2), X*theta, '-')
+legend('Training data', 'Linear regression')
+hold off 							% don't overlay any more plots on this figure
