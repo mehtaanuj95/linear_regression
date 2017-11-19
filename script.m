@@ -20,3 +20,9 @@ theta = zeros(2, 1);
 
 % Compute Cost Function
 J = computeCost(X, y, theta);
+
+% Gradient Descent
+iterations = 1500;
+alpha = 0.01;
+
+theta = gradientDescent(X, y, theta, alpha, iterations);
